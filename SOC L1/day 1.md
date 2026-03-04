@@ -1,8 +1,8 @@
 # SOC (security operation center)
-purpose
-> minimize dwell time(time attacker stays hidden)
-> first line of defence 
-> 24*7 monitoring to detect, analyze and respond to threats
+purpose:
+- minimize dwell time(time attacker stays hidden)
+- first line of defence 
+- 24*7 monitoring to detect, analyze and respond to threats
 
 # Difference between soc vs noc vs IR team
 SOC -
@@ -43,7 +43,7 @@ also think it like:-
 
 # attack scenarios: defender's perspective
 
-> phishing attack
+1) phishing attack
 indicators:
 - email gateway alerts
 - user clicking suspicious link
@@ -51,7 +51,7 @@ indicators:
 
 action -> check email headers, verify domain reputation, isolate user endpoint if compromise suspected
 
-> malware execution
+2) malware execution
 indicators:
 - EDR alert on suspicious process
 - unsigned executable
@@ -59,7 +59,7 @@ indicators:
 
 action -> quarantine file, check hash in virustotal, document IOCs, escalate for forensics
 
-> ransomware
+3) ransomware
 - mass file encryption
 - ransom note creation
 - unusual disk activity
@@ -67,7 +67,7 @@ action -> quarantine file, check hash in virustotal, document IOCs, escalate for
 
 action: immeditate escalation, isolate affected systems, document timeline, notify IR team
 
-> brute force
+4) brute force
 - multiple failed logins attempts (event id 4625)
 - account lockouts
 - login from unusual locations
@@ -101,16 +101,16 @@ quick context: is this a critical server or user workstation? business hour or 3
 
 
 true positive indicatiors
-> connection to known malicious ip/domain
-> unusual time of activity (3am access to finance data)
-> privilege escalation attempts
-> data exfiltration patterns (large uploads to cloud storage)
+- connection to known malicious ip/domain
+- unusual time of activity (3am access to finance data)
+- privilege escalation attempts
+- data exfiltration patterns (large uploads to cloud storage)
 > multiple failed logins followed by success
 
 common false positive
-> automated system scans triggering port scan alerts
-> legitimate admin activity flagged as suspicious
-> poorly tuned SIEM rules with low thresholds
-> benign software triggering EDR heuristics
+- automated system scans triggering port scan alerts
+- legitimate admin activity flagged as suspicious
+- poorly tuned SIEM rules with low thresholds
+- benign software triggering EDR heuristics
+- scheduled tasks appearing as unusual processes
 
-> scheduled tasks appearing as unusual processes
