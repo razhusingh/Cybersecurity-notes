@@ -29,75 +29,75 @@ also think it like:-
 
 # soc analyst l1: role on the front line
 1) monitor and triage alerts 
-watch SIEM dashboard
-perform initial triage 
-check logs
+- watch SIEM dashboard
+- perform initial triage 
+- check logs
 
 2) analyze and document
-analyze logs(windows event, firewall, proxy)
-document investigation findings
+- analyze logs(windows event, firewall, proxy)
+- document investigation findings
 
 3) Escalate or close
-close alert if false positve
-escalate to l2/l3 for deeper investigation
+- close alert if false positve
+- escalate to l2/l3 for deeper investigation
 
 # attack scenarios: defender's perspective
 
 > phishing attack
 indicators:
-email gateway alerts
-user clicking suspicious link
-outbound connection to new domain
+- email gateway alerts
+- user clicking suspicious link
+- outbound connection to new domain
 
 action -> check email headers, verify domain reputation, isolate user endpoint if compromise suspected
 
 > malware execution
 indicators:
-EDR alert on suspicious process
-unsigned executable
-outbound beacon to c2 server
+- EDR alert on suspicious process
+- unsigned executable
+- outbound beacon to c2 server
 
 action -> quarantine file, check hash in virustotal, document IOCs, escalate for forensics
 
 > ransomware
-mass file encryption
-ransom note creation
-unusual disk activity
-backup deletion attempts
+- mass file encryption
+- ransom note creation
+- unusual disk activity
+- backup deletion attempts
 
 action: immeditate escalation, isolate affected systems, document timeline, notify IR team
 
 > brute force
-multiple failed logins attempts (event id 4625)
-account lockouts
-login from unusual locations
+- multiple failed logins attempts (event id 4625)
+- account lockouts
+- login from unusual locations
 
 action: verify legitimate user activity, block source ip, check compromise, reset credentials
 
 # alert triage: your decision making framework
 1) initial assessment
-read alert description
-check severity rating 
-note affected asset
+- read alert description
+- check severity rating 
+- note affected asset
 
 quick context: is this a critical server or user workstation? business hour or 3 AM
 
 2) log analysis
-query SIEM logs
-check 30 min before/after alert
-analyze ip, user, process, frequency
+- query SIEM logs
+- check 30 min before/after alert
+- analyze ip, user, process, frequency
 
 3) context gathering
-is source ip internal or external?
-is user account legitimate? 
-check threat intelligence sources
-verify if IP/domain is malicious
-any similar alerts recently?
+- is source ip internal or external?
+- is user account legitimate? 
+- check threat intelligence sources
+- verify if IP/domain is malicious
+- any similar alerts recently?
 
 4) decision
-true positive? escalate with documentation
-false positive? close with clear justification
-unsure? escalate- better safe than compromised
+- true positive? escalate with documentation
+- false positive? close with clear justification
+- unsure? escalate- better safe than compromised
 
 
 true positive indicatiors
@@ -112,4 +112,5 @@ common false positive
 > legitimate admin activity flagged as suspicious
 > poorly tuned SIEM rules with low thresholds
 > benign software triggering EDR heuristics
+
 > scheduled tasks appearing as unusual processes
