@@ -22,10 +22,10 @@ also think it like:-
 - IR team are special force deployed when attack breach defences
 
 # duties as a soc analyst
-> monitor and invistigate security threats
-> participate in security workshop
-> collaborate with security teams
-> constantly learn new attacks and defenses
+- monitor and invistigate security threats
+- participate in security workshop
+- collaborate with security teams
+- constantly learn new attacks and defenses
 
 # soc analyst l1: role on the front line
 1) monitor and triage alerts 
@@ -105,7 +105,7 @@ true positive indicatiors
 - unusual time of activity (3am access to finance data)
 - privilege escalation attempts
 - data exfiltration patterns (large uploads to cloud storage)
-> multiple failed logins followed by success
+- multiple failed logins followed by success
 
 common false positive
 - automated system scans triggering port scan alerts
@@ -113,4 +113,5 @@ common false positive
 - poorly tuned SIEM rules with low thresholds
 - benign software triggering EDR heuristics
 - scheduled tasks appearing as unusual processes
+
 
