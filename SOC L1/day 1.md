@@ -100,7 +100,7 @@ quick context: is this a critical server or user workstation? business hour or 3
 - unsure? escalate- better safe than compromised
 
 
-true positive indicatiors
+true positive indicators
 - connection to known malicious ip/domain
 - unusual time of activity (3am access to finance data)
 - privilege escalation attempts
@@ -108,10 +108,12 @@ true positive indicatiors
 - multiple failed logins followed by success
 
 common false positive
-- automated system scans triggering port scan alerts
-- legitimate admin activity flagged as suspicious
-- poorly tuned SIEM rules with low thresholds
-- benign software triggering EDR heuristics
-- scheduled tasks appearing as unusual processes
+- automated scans
+- legitimate admin action
+- security tool alerts
+- unusual but legitimate user activity
+- poorly configured detection rules
+- 
+
 
 
