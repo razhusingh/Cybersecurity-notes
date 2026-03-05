@@ -113,7 +113,6 @@ common false positive
 - security tool alerts
 - unusual but legitimate user activity
 - poorly configured detection rules
-- 
-
+  
 
 
