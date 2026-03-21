@@ -14,8 +14,6 @@ a domain controller is a server that runs active directory services
 
  Responsibilities
 - authenticates users (login verification)
-
-6
 - authorizes access (permission control)
 - enforces domain policies
 - stores ad database
@@ -177,7 +175,7 @@ features:
 - more secure than NTLM
 
 simplified process:
-
+```
 user login
 |
 request ticket from domain controller
@@ -185,7 +183,7 @@ request ticket from domain controller
 domain controller verifies identity
 |
 access granted
-
+```
 NTLM:
 older authentication protocol
 
