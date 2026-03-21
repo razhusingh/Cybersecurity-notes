@@ -5,7 +5,7 @@ a group of user and computer under the administartor of given business
 active directory is a centralized directory service used in windows domains to manage users, computers and resources
 
  puprose
-- provieds authentication and authorization
+- provides authentication and authorization
 - stores information about objects
 - enforces security policies
 
@@ -68,7 +68,7 @@ an OU is a container used to organize objects within a domain
 OU is not a security principal 
 
 # Active directory structure
-```text
+```
 domain: company.local
 |
 |------ OU: HR
