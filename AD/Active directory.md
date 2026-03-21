@@ -98,10 +98,10 @@ A domain contains multiple organizational units(OUs) used to organize users and 
 
 # delegation
 the process of granting privileges to a user over some ou or other AD object
-
+```
 Set-ADAccountPassword username -Reset -NewPassword (Read-Host -AsSecureString -Prompt 'New Password') -Verbose
 Set-ADUser -ChangePasswordAtLogon $true -Identity sophie -Verbose
-
+```
 # managing users in active directory
 
 Users represent accounts used by people or services to access network resources
