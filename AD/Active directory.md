@@ -70,7 +70,7 @@ an OU is a container used to organize objects within a domain
 OU is not a security principal 
 
 # Active directory structure
-'''text
+```text
 domain: company.local
 |
 |------ OU: HR
@@ -94,6 +94,7 @@ domain: company.local
 |         |--- USER: raju
 |         |--- USER: raju2
 |         |
+```
 
 A domain contains multiple organizational units(OUs) used to organize users and computers and apply group policies
 
