@@ -1,17 +1,17 @@
 # CIA Triad - the security mindset
 what is CIA?
 CIA stands for:
-> confidentiality
-> integrity
-> availability
+- confidentiality
+- integrity
+- availability
 but this is not just a definition.
 
 it is a security thinking framework.
 
 whenever you see a system, website, server or data your brain should automatically ask:
-is it protected?
-is it correct?
-is it accessible when needed?
+-is it protected?
+-is it correct?
+-is it accessible when needed?
 
 that is the CIA mindset.
 
@@ -20,8 +20,8 @@ meaning:
 data should only be accessed by authorized people.
 
 mindset question:
-> who is allowed to see this?
-> what happens if an attacker reads it?
+- who is allowed to see this?
+- what happens if an attacker reads it?
 
 example:
 - passwords
