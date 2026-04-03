@@ -28,13 +28,13 @@ powershell commands are called cmdlets
 
 format:
 verb-noun
-
+```
 examples:
 get-process = show processes
 get-service = show services
 get-content = read file
 get-help = command help
-
+```
 example:
 get-help get-service
 
@@ -134,14 +134,14 @@ show files greater than 100 bytes
 
 example:
 get-service | where-object {$_.status -eq "running"}
-
+```
 operators;
 -eq = equal
 -ne = not equal
 -gt = greater than
 -lt = less than
 -like = pattern match
-
+```
 # sorting data
 show results:
 get-process | sort-object cpu
@@ -187,7 +187,7 @@ get-service
 
 search specific service:
 get-service | where-object {$_.displayname -like "*raju*"}
-
+```
 # important properties
 
 name = object name
@@ -195,7 +195,7 @@ displayname = service name
 length = file size
 status = service status
 owningprocess = process responsible
-
+```
 # useful enumeration commands 
 list users:
 get-localuser
