@@ -62,13 +62,14 @@ example output:
 echo -> write-output
 
 # powershell aliases
+```
 aliases are shortcut for commands
 
 ls = get-childitem
 cat = get-content
 cd = set-location
 echo = write-output
-
+```
 example:
 ls
 
