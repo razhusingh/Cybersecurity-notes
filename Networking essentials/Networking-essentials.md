@@ -8,7 +8,7 @@ Networking
 
 DHCP(dynamic host configuration protocol)
 
-purpose
+# purpose
 automatically assigns:
 - ip address
 - subnet mask
@@ -23,14 +23,14 @@ DHCP process (DORA)
 |request |device requests ip |
 |acknowledge |server confirms |
 
-important 
+# important 
 without DHCP:
 - manual ip configuration needed
 
 # ARP: bridging layer 3 addressing to layer 2 addressing
 ARP(Address resolution protocol)
 
-purpose
+# purpose
 converts:
 - ip address -> mac address
 
@@ -47,42 +47,42 @@ arp connects both
 
 ICMP(Internet control message protocol)
 
-purpose
+# purpose
 - error reporting
 - network troubleshooting
 
 ping
-used for connectivity testing
+- used for connectivity testing
 
 example:
-ping google.com
+- ping google.com
 
 traceroute
-shows packet path
+- shows packet path
 
 windows:
 
-tracert google.com
+- tracert google.com
 
 linux:
 
-traceroute google.com
+- traceroute google.com
 
 # routing
 process of forwarding packets between networks
 
-Router
+# Router
 purpose
 - connects networks
 - forwards packets
 
 default gateway
-router ip used to access external networks
+- router ip used to access external networks
 
 example:
-192.168.1.1
+- 192.168.1.1
 
-routing table
+# routing table
 
 contains:
 - destination network
@@ -103,7 +103,7 @@ example
 - 192.168.0.137 -> 212.3.4.5
 
 PAT
-Port address translation
+- Port address translation
 
 uses:
 - one public ip
