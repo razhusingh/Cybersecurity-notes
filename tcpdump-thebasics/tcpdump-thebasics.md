@@ -210,7 +210,8 @@ Common Options Summary
 |-e	|Ethernet headers |
 
 Common Filters Summary
-|Filter	| Purpose |
+|filter	|purpose |
+|-------|---------|
 |host x.x.x.x	|Specific host |
 |src host	|Source host |
 |dst host	|Destination host |
@@ -222,6 +223,7 @@ Common Filters Summary
 
 Important Commands Summary
 |Command | Purpose |
+|--------|---------|
 |tcpdump -D	|List interfaces |
 |tcpdump -i eth0	|Capture on interface |
 |tcpdump -r file.pcap	|Read capture |
