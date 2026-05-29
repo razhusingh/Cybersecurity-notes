@@ -363,6 +363,7 @@ example:
 
 # How reporting, escalation and communication fit together
 How Reporting, Escalation & Communication Fit Together
+```
 Alert Detected
      ↓
 Alert Triage
@@ -374,3 +375,4 @@ Escalation (if needed)
 Clear Communication
      ↓
 Action Take
+```
