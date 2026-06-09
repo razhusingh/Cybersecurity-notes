@@ -67,6 +67,7 @@ soc detection:
 4. Ransomware
 - encrypts victim files and demands ransom payment
 
+  attack flow:
 - 1. phishing email
 - 2. user clicks attachment
 - 3. malware installs
