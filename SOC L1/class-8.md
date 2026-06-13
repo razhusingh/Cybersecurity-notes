@@ -157,31 +157,31 @@ When you get alert:
 "Multiple failed login attempts"
 
 You must check:
-Source IP
-Geo location
-Username targeted
-Success or only failures?
-Time frequency
-Account lockout triggered?
-Any successful login after failures?
+- Source IP
+- Geo location
+- Username targeted
+- Success or only failures?
+- Time frequency
+- Account lockout triggered?
+- Any successful login after failures?
 
 If yes → escalate immediately.
 
  # important logs to master:
 
  Windows
- 4625 → Failed login
- 4624 → Successful login
- 4776 → NTLM authentication
- 4740 → Account lockout
+- 4625 → Failed login
+- 4624 → Successful login
+- 4776 → NTLM authentication
+- 4740 → Account lockout
 
  Linux
- /var/log/auth.log
- SSH login attempts
+ - /var/log/auth.log
+ - SSH login attempts
 
  Firewall
- Repeated connection attempts
- Blocked connection spikes
+ - Repeated connection attempts
+ - Blocked connection spikes
  
  # prevention mechanisms
  - acount lockout policy
