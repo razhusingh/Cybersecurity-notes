@@ -60,7 +60,7 @@ Indicators:
 A: Trying all possible password combinations until one works.
 
 - Q2. Difference between Brute Force and Password Spraying?
-- 
+  
 Brute Force
 Many passwords → One user
 Password Spraying
@@ -88,48 +88,58 @@ Harder to detect
 # ⚡ Active Recall Flashcards
 - Q:
 Many passwords against one account?
-A:
-Brute Force
+
+A: brute Force
+
 - Q:
 One password against many accounts?
-A:
-Password Spraying
+
+A: Password Spraying
+
 - Q:
 Common password list attack?
-A:
-Dictionary Attack
+
+A: Dictionary Attack
+
 - Q:
 Dictionary + customized variations?
-A:
-Hybrid Attack
+
+A: Hybrid Attack
+
 - Q:
 Uses leaked credentials?
-A:
-Credential Stuffing
+
+A: Credential Stuffing
+
 - Q:
 Uses stolen password hashes?
-A:
-Rainbow Table Attack
+
+A:Rainbow Table Attack
+
 - Q:
 Floods user with MFA requests?
-A:
-MFA Fatigue Attack
+
+A: MFA Fatigue Attack
+
 - Q:
 Windows Event ID for failed login?
-A:
-4625
+
+A: 4625
+
 - Q:
 Windows Event ID for successful login?
-A:
-4624
+
+A: 4624
+
 - Q:
 Windows Event ID for NTLM authentication?
-A:
-4776
+
+A: 4776
+
 - Q:
 Windows Event ID for account lockout?
-A:
-4740
+
+A: 4740
 
 # 🔥 Must Remember
 Common Targets
