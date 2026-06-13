@@ -56,24 +56,30 @@ Indicators:
 
 # 🎯 Interview Questions
 - Q1. What is Brute Force Attack?
+
 A: Trying all possible password combinations until one works.
 
 - Q2. Difference between Brute Force and Password Spraying?
+- 
 Brute Force
 Many passwords → One user
 Password Spraying
 One password → Many users
 
 - Q3. What is Credential Stuffing?
+  
 A: Using leaked username/password combinations from previous breaches.
 
 - Q4. What is MFA Fatigue?
+  
 A: Repeated MFA requests sent to victim until they approve login.
 
 - Q5. What is Rainbow Table Attack?
+  
 A: Using precomputed tables to convert stolen password hashes into plaintext passwords.
 
 - Q6. Why is Password Spraying dangerous?
+  
 A:
 Low and slow
 Avoids lockout
