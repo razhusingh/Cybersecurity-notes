@@ -55,67 +55,72 @@ Indicators:
 - Common in Azure AD environments
 
 # 🎯 Interview Questions
-Q1. What is Brute Force Attack?
+- Q1. What is Brute Force Attack?
 A: Trying all possible password combinations until one works.
-Q2. Difference between Brute Force and Password Spraying?
+
+- Q2. Difference between Brute Force and Password Spraying?
 Brute Force
 Many passwords → One user
 Password Spraying
 One password → Many users
-Q3. What is Credential Stuffing?
+
+- Q3. What is Credential Stuffing?
 A: Using leaked username/password combinations from previous breaches.
-Q4. What is MFA Fatigue?
+
+- Q4. What is MFA Fatigue?
 A: Repeated MFA requests sent to victim until they approve login.
-Q5. What is Rainbow Table Attack?
+
+- Q5. What is Rainbow Table Attack?
 A: Using precomputed tables to convert stolen password hashes into plaintext passwords.
-Q6. Why is Password Spraying dangerous?
+
+- Q6. Why is Password Spraying dangerous?
 A:
 Low and slow
 Avoids lockout
 Harder to detect
 
 # ⚡ Active Recall Flashcards
-Q:
+- Q:
 Many passwords against one account?
 A:
 Brute Force
-Q:
+- Q:
 One password against many accounts?
 A:
 Password Spraying
-Q:
+- Q:
 Common password list attack?
 A:
 Dictionary Attack
-Q:
+- Q:
 Dictionary + customized variations?
 A:
 Hybrid Attack
-Q:
+- Q:
 Uses leaked credentials?
 A:
 Credential Stuffing
-Q:
+- Q:
 Uses stolen password hashes?
 A:
 Rainbow Table Attack
-Q:
+- Q:
 Floods user with MFA requests?
 A:
 MFA Fatigue Attack
-Q:
+- Q:
 Windows Event ID for failed login?
 A:
 4625
-Q:
+- Q:
 Windows Event ID for successful login?
 A:
 4624
-Q:
+- Q:
 Windows Event ID for NTLM authentication?
 A:
 4776
-Q:
+- Q:
 Windows Event ID for account lockout?
 A:
 4740
