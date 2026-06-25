@@ -146,16 +146,16 @@ A: Username + Salt + Hash.
 
 # Must Remember Points
 
-✅ Hashing = Integrity
-✅ Encryption = Confidentiality
-✅ Passwords = Hash + Salt
-✅ bcrypt > SHA256 for passwords
-✅ Argon2 = Modern standard
-✅ Salt prevents rainbow table attacks
-✅ Pepper stored outside database
-✅ MD5 & SHA1 should never be used for passwords
-✅ HTTPS uses asymmetric encryption first, then secure session communication
-✅ Weak password storage can lead to credential stuffing attacks
+- Hashing = Integrity
+- Encryption = Confidentiality
+- Passwords = Hash + Salt
+- bcrypt > SHA256 for passwords
+- Argon2 = Modern standard
+- Salt prevents rainbow table attacks
+- Pepper stored outside database
+- MD5 & SHA1 should never be used for passwords
+- HTTPS uses asymmetric encryption first, then secure session communication
+- Weak password storage can lead to credential stuffing attacks
 
 # SOC Analyst Mindset
 During Database Breach Investigation
@@ -182,5 +182,5 @@ Weak password storage (MD5/SHA1 without salt) → Database breach → Password c
 
 
 # Golden Line:
-👉 Passwords = bcrypt/Argon2 + Salt (+ Pepper)
-👉 Hashing = Integrity | Encryption = Confidentiality
+- Passwords = bcrypt/Argon2 + Salt (+ Pepper)
+- Hashing = Integrity | Encryption = Confidentiality
