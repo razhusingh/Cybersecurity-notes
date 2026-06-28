@@ -247,8 +247,10 @@ Ransomware
 
 19. Lateral Movement = Sideways movement across systems. Privilege Escalation = Upward movement to gain higher permissions.
 
-20. 
+```
 Mimikatz → Credential Dumping
 LSASS Access → Credential Dumping
 Admin Login → Privilege Escalation
 RDP to File Server → Lateral Movement
+
+```
