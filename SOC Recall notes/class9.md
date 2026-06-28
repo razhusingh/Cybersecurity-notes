@@ -135,7 +135,7 @@ Weak password storage (MD5/SHA1 without salt) → Database breach → Password c
 
 5. Why should passwords be hashed instead of encrypted?
 
-6.What is a Rainbow Table Attack?
+6. What is a Rainbow Table Attack?
 
 7. Why is hashing alone not enough for password protection?
 
