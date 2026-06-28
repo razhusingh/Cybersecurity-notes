@@ -211,35 +211,6 @@ Based on SOC Analyst L1 Day 8 – Password Attacks.
 
 25. Explain the ransomware attack chain involving password attacks. 
 
-26. What is the difference between Brute Force Attack and Password Spraying?
-
-27. Which password attack uses previously leaked credentials?
-
-28. Which password attack repeatedly sends MFA push notifications?
-
-29. Which password attack uses precomputed hash tables?
-
-30. Which password attack is considered an offline attack?
-
-31. Which password attack is most common in ransomware incidents?
-
-32. Which password attack is the easiest for SOC teams to detect?
-
-33. Which password attack is the hardest for SOC teams to detect?
-
-34. Which Windows Event ID indicates a failed login?
-
-35. Which Windows Event ID indicates a successful login?
-
-36. Which Windows Event ID is related to NTLM authentication?
-
-37. Which Windows Event ID indicates an account lockout?
-
-38. During a brute force attack, which log should a SOC analyst check first?
-
-39. Why is account lockout policy important?
-
-40. Why is MFA an effective defense against password attacks?
 
 # Answer Key
 
@@ -347,44 +318,5 @@ Disable Default Accounts
 24. Rainbow Table Attack.
 
 25. Phishing → Credential Theft → VPN Login Attempt → MFA Failure → Password Spraying → Weak Service Account Compromised → Internal Access.
+25. Phishing → Credential Theft → VPN Login Attempt → MFA Failure → Password Spraying → Weak Service Account Compromised → Internal Access.
 
-26.
-```
-Brute Force: Many passwords → One user.
-Password Spraying: One password → Many users.
-```
-27. Credential Stuffing.
-
-28. MFA Fatigue Attack.
-
-29. Rainbow Table Attack.
-
-30. Rainbow Table Attack.
-
-31. Password Spraying and Credential Stuffing are commonly seen in ransomware attack chains.
-
-32. Brute Force Attack.
-
-33. Password Spraying, Credential Stuffing, and MFA Fatigue Attack.
-
-34. Event ID 4625 (Failed Login).
-
-35. Event ID 4624 (Successful Login).
-
-36. Event ID 4776 (NTLM Authentication).
-
-37. Event ID 4740 (Account Lockout).
-
-38.
-Check:
-```
-Source IP
-Username
-Login frequency
-Success/Failure
-Geo-location
-Account lockout status
-```
-40. It blocks repeated login attempts after multiple failures, reducing the risk of brute force attacks.
-
-41. Even if an attacker knows the correct password, they still need the second authentication factor to access the account.
