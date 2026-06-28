@@ -248,41 +248,41 @@ Based on SOC Analyst L1 Day 8 – Password Attacks.
 2. The attacker sends thousands of login attempts until one succeeds, especially if no account lockout policy exists.
 
 3.
-
+```
 Event ID 4625 (Failed Login)
 Multiple attempts from same IP
 Same username targeted repeatedly
 High authentication failures
 Frequent login attempts
-
-4.
-
+```
+5.
+```
 Hydra
 Burp Suite
 Medusa
 Ncrack
-
+```
 5. One common password is tried against many user accounts.
 
 6. An attacker uses a wordlist of common passwords instead of trying every possible combination.
 
 7.
-
+```
 Common password patterns
 Moderate-speed login attempts
 Attempts across multiple systems
-
+```
 8. One password is tried against many user accounts.
 
 9. It avoids account lockout and exploits predictable passwords.
 
 10.
-
+```
 One password across many usernames
 Attempts spread over time
 No account lockout
 Multiple usernames targeted
-
+```
 11. A combination of dictionary words with customized password variations.
 
 12. An attack that uses precomputed hash tables to recover plaintext passwords from stolen hashes.
@@ -290,29 +290,29 @@ Multiple usernames targeted
 13. Using leaked username-password combinations from previous breaches to access other services.
 
 14.
-
+```
 Login attempts from multiple IPs
 Valid credentials from unusual locations
 Impossible travel alerts
 High login success after previous failures
-
+```
 15. Repeated MFA prompts are sent until the victim accidentally approves one.
 
 16.
-
+```
 Multiple MFA requests
 Successful login after repeated MFA prompts
-
+```
 17.
-
+```
 RDP (3389)
 SSH (22)
 VPN Portals
 Web Applications
 Database Login Panels
-
+```
 18.
-
+```
 Source IP
 Geo Location
 Username
@@ -320,18 +320,18 @@ Success or Failure
 Login Frequency
 Account Lockout
 Successful login after failures
-
+```
 19.
-
+```
 4625 → Failed Login
 4624 → Successful Login
 4776 → NTLM Authentication
 4740 → Account Lockout
-
+```
 20. /var/log/auth.log
 
 21.
-
+```
 Account Lockout Policy
 MFA
 Rate Limiting
@@ -339,7 +339,7 @@ CAPTCHA
 Geo-blocking
 Strong Password Policy
 Disable Default Accounts
-
+```
 22. Brute Force Attack.
 
 23. Password Spraying, Credential Stuffing and MFA Fatigue Attack.
@@ -349,55 +349,42 @@ Disable Default Accounts
 25. Phishing → Credential Theft → VPN Login Attempt → MFA Failure → Password Spraying → Weak Service Account Compromised → Internal Access.
 
 26.
-
+```
 Brute Force: Many passwords → One user.
 Password Spraying: One password → Many users.
+```
+27. Credential Stuffing.
 
-27.
-Credential Stuffing.
+28. MFA Fatigue Attack.
 
-28.
-MFA Fatigue Attack.
+29. Rainbow Table Attack.
 
-29.
-Rainbow Table Attack.
+30. Rainbow Table Attack.
 
-30.
-Rainbow Table Attack.
+31. Password Spraying and Credential Stuffing are commonly seen in ransomware attack chains.
 
-31.
-Password Spraying and Credential Stuffing are commonly seen in ransomware attack chains.
+32. Brute Force Attack.
 
-32.
-Brute Force Attack.
+33. Password Spraying, Credential Stuffing, and MFA Fatigue Attack.
 
-33.
-Password Spraying, Credential Stuffing, and MFA Fatigue Attack.
+34. Event ID 4625 (Failed Login).
 
-34.
-Event ID 4625 (Failed Login).
+35. Event ID 4624 (Successful Login).
 
-35.
-Event ID 4624 (Successful Login).
+36. Event ID 4776 (NTLM Authentication).
 
-36.
-Event ID 4776 (NTLM Authentication).
-
-37.
-Event ID 4740 (Account Lockout).
+37. Event ID 4740 (Account Lockout).
 
 38.
 Check:
-
+```
 Source IP
 Username
 Login frequency
 Success/Failure
 Geo-location
 Account lockout status
+```
+40. It blocks repeated login attempts after multiple failures, reducing the risk of brute force attacks.
 
-39.
-It blocks repeated login attempts after multiple failures, reducing the risk of brute force attacks.
-
-40.
-Even if an attacker knows the correct password, they still need the second authentication factor to access the account.
+41. Even if an attacker knows the correct password, they still need the second authentication factor to access the account.
