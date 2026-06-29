@@ -82,13 +82,25 @@ Detection Engineer
 SOC Manager
 - Manage SOC Team
 
+Daily Duties of L1 SOC Analyst
+- Monitor SIEM, EDR/XDR, Firewall & Email Alerts
+- Validate (True Positive vs False Positive)
+- Escalate Critical Incidents
+- Document every alert in the Ticketing System
+  
 Alert Triage (5 Ws)
 - What?
 - When?
 - Where?
 - Who?
 - Why?
-
+- 
+Good Incident Report should include:
+- 5 Ws
+- Investigation Findings
+- Screenshots as Evidence
+- Ticket Details
+  
 Security Technologies
 
 SIEM
